@@ -60,26 +60,6 @@ img {
 }
 
 /* Шапка */
-.page-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ececec;
-
-  /* position: fixed;
-  width: 100%;
-  min-height: 80px;
-  top: 0;
-  left: 0;
-  z-index: 1; */
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.nav {
-  display: flex;
-}
 
 /* logo */
 
