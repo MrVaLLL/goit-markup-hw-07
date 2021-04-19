@@ -19,7 +19,7 @@
     url('../images/boxs/hero.jpg');
 }
 
-.slogan-text {
+.slogan__text {
   max-width: 696px;
   /* padding: auto; */
   margin-left: auto;
@@ -41,22 +41,10 @@
   animation-direction: alternate;
 }
 
-/* @keyframes fadeInDown {
-  0% {
-    animation: animate__fadeInDown;
-    animation-duration: 3s;
-    animation-delay: 2000ms;
-    transition-timing-function: linear;
-    animation-direction: alternate;
+.animate__fadeInDown {
+  &:hover {
+    animation-play-state: paused;
   }
-  100% {
-    animation-delay: 2000ms;
-    animation-duration: 3s;
-  }
-} */
-
-.animate__lightSpeedInLeft:hover {
-  animation-play-state: paused;
 }
 
 .btn-slogan {
@@ -67,23 +55,23 @@
   font-family: inherit;
   border: none;
   cursor: pointer;
-  background-color: var(--link-color);
+  background-color: $link-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   opacity: 1;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border: none;
+    background-color: #188ce8;
+    opacity: 1;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.btn-slogan:focus,
-.btn-slogan:hover {
-  outline: none;
-  border: none;
-  background-color: #188ce8;
-  opacity: 1;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-button {
+.btn-slogan__text {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
