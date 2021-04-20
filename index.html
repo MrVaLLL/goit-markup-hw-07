@@ -68,8 +68,8 @@
       <section class="slogan overlay">
         <div class="container">
           <h1 class="slogan__text animate__fadeInDown">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open class="btn-slogan" type="button">
-            <span class="btn-slogan__text">Заказать услугу</span>
+          <button data-modal-open class="btn" type="button">
+            <span class="btn__text">Заказать услугу</span>
           </button>
         </div>
       </section>
@@ -403,31 +403,34 @@
 
     <!--Подвал-->
     <footer class="footer">
-      <div class="container footer-web">
-        <div class="footer-webstudio">
-          <a class="webstudi-o" href="./index.html"><span class="web">Web</span><span class="studi-o">Studio</span> </a>
-          <address class="footer-adress">
+      <div class="container footer-container">
+        <div class="footer-container__list">
+          <a class="footer-container__link" href="./index.html">
+            <span class="footer-container__link--accent">Web</span
+            ><span class="footer-container__link--secondary">Studio</span>
+          </a>
+          <address class="adress">
             <a
-              class="adress-text"
+              class="adress__link"
               href="https://goo.gl/maps/3bDAXwTy5A2F5pWt9"
               target="_blank"
               rel="noopener noreferrer"
             >
               г. Киев, пр-т Леси Украинки, 26
             </a>
-            <ul class="footer-list">
-              <li>
-                <a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="footer-contacts">
+              <li class="footer-contacts__list">
+                <a class="footer-contacts__link" href="mailto:info@devstudio.com" alt="Почта"> info@devstudio.com </a>
               </li>
 
-              <li>
-                <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer-contacts__list">
+                <a class="footer-contacts__link" href="tel:+380961111111" alt="номер телефона">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
-        <div class="footer-webstudio">
+        <div class="footer-container__list">
           <h3 class="footer-title">Присоединятесь</h3>
           <ul class="footer-cards">
             <li class="footer-social">
@@ -466,13 +469,13 @@
 
         <div class="subscribe">
           <h2 class="footer-title">Подпишитесь на рассылку</h2>
-          <form class="form-subscribe">
+          <form class="subscribe__form">
             <label>
-              <input class="subscribe-input" type="email" name="email" placeholder="E-mail" />
+              <input class="subscribe__input" type="email" name="email" placeholder="E-mail" />
             </label>
-            <button class="btn-slogan symboll" type="button">
-              <span class="btn-button">Подписаться</span>
-              <svg class="btn-subscribe" width="24" height="24">
+            <button class="button__subscribe" type="button">
+              <span class="btn__text">Подписаться</span>
+              <svg class="btn__subscribe" width="24" height="24">
                 <use href="./images/sprite.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -490,9 +493,9 @@
         </button>
 
         <form class="form js-speaker-form" name="signup_form" autocomplete="on" novalidate>
-          <h2 class="form-h2">Оставьте свои данные, мы вам перезвоним</h2>
+          <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
 
-          <div class="form-field">
+          <div class="form__field">
             <label for="name" class="form-label">
               <span class="form-info">Имя</span>
             </label>
@@ -504,7 +507,7 @@
             </div>
           </div>
 
-          <div class="form-field">
+          <div class="form__field">
             <label for="tel" class="form-label">
               <span class="form-info">Телефон</span>
             </label>
@@ -516,7 +519,7 @@
             </div>
           </div>
 
-          <div class="form-field">
+          <div class="form__field">
             <label for="mail" class="form-label">
               <span class="form-info">Почта</span>
             </label>
@@ -528,7 +531,7 @@
             </div>
           </div>
 
-          <div class="form-field">
+          <div class="form__field">
             <label for="comment" class="form-label">
               <span class="form-info">Комментарий</span>
             </label>
