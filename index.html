@@ -432,34 +432,34 @@
 
         <div class="footer-container__list">
           <h3 class="footer-title">Присоединятесь</h3>
-          <ul class="footer-cards">
-            <li class="footer-social">
-              <a class="footer-social-link" href="">
-                <svg class="footer-logsocial" width="20px" height="20px">
+          <ul class="footer-social">
+            <li class="footer-social__list">
+              <a class="footer-social__link" href="">
+                <svg class="footer-social__logo" width="20px" height="20px">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="footer-social">
-              <a class="footer-social-link" href="">
-                <svg class="footer-logsocial" width="20px" height="20px">
+            <li class="footer-social__list">
+              <a class="footer-social__link" href="">
+                <svg class="footer-social__logo" width="20px" height="20px">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="footer-social">
-              <a class="footer-social-link" href="">
-                <svg class="footer-logsocial" width="20px" height="20px">
+            <li class="footer-social__list">
+              <a class="footer-social__link" href="">
+                <svg class="footer-social__logo" width="20px" height="20px">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="footer-social">
-              <a class="footer-social-link" href="">
-                <svg class="footer-logsocial" width="20px" height="20px">
+            <li class="footer-social__list">
+              <a class="footer-social__link" href="">
+                <svg class="footer-social__logo" width="20px" height="20px">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -496,58 +496,59 @@
           <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
 
           <div class="form__field">
-            <label for="name" class="form-label">
+            <label class="form__label" for="name">
               <span class="form-info">Имя</span>
             </label>
-            <div class="form-modal">
-              <input class="form-input" type="text" name="name" id="name" />
-              <svg class="form-icon" width="12" height="12">
+            <div class="form__modal">
+              <input class="form__input" type="text" name="name" id="name" />
+              <svg class="form__icon" width="12" height="12">
                 <use href="./images/sprite.svg#icon-chel"></use>
               </svg>
             </div>
           </div>
 
           <div class="form__field">
-            <label for="tel" class="form-label">
-              <span class="form-info">Телефон</span>
+            <label class="form__label" for="tel">
+              <span class="form__info">Телефон</span>
             </label>
-            <div class="form-modal">
-              <input class="form-input" type="tel" name="telephone" id="tel" />
-              <svg class="form-icon" width="13px" height="13px">
+            <div class="form__modal">
+              <input class="form__input" type="tel" name="telephone" id="tel" />
+              <svg class="form__icon" width="13px" height="13px">
                 <use href="./images/sprite.svg#icon-tel"></use>
               </svg>
             </div>
           </div>
 
           <div class="form__field">
-            <label for="mail" class="form-label">
+            <label class="form__label" for="mail">
               <span class="form-info">Почта</span>
             </label>
-            <div class="form-modal">
-              <input class="form-input" type="email" name="mail" id="mail" />
-              <svg class="form-icon" width="14px" height="12px">
+            <div class="form__modal">
+              <input class="form__input" type="email" name="mail" id="mail" />
+              <svg class="form__icon" width="14px" height="12px">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
             </div>
           </div>
 
           <div class="form__field">
-            <label for="comment" class="form-label">
-              <span class="form-info">Комментарий</span>
+            <label class="form__label" for="comment">
+              <span class="form__info">Комментарий</span>
             </label>
-            <textarea class="comment" name="comment" rows="10" id="comment" placeholder="Введите текст"> </textarea>
+            <textarea class="form__textarea" name="comment" id="comment" placeholder="Введите текст">
+            </textarea>
           </div>
 
-          <label class="form-policy">
-            <input class="modal-checkbox visually-hidden" type="checkbox" name="policy" />
-            <span class="icon-custom"></span>
+          <label class="form__policy">
+            <input class="modal__checkbox visually-hidden" type="checkbox" name="policy" />
+            <span class="icon__custom"></span>
             <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>&nbsp;
             <a href="#" class="link-text">Условия договора</a>
           </label>
 
-          <div class="btn-submit">
-            <button class="btn-slogan" type="submit">
-              <span class="btn-button modal-button">Отправить</span>
+          <div class="btn__submit">
+            <button class="btn" type="submit">
+              <span class="btn__text modal-button">Отправить</span>
             </button>
           </div>
         </form>
