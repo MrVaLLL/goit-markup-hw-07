@@ -18,27 +18,33 @@
   display: flex;
   align-items: center;
   margin-right: 94px;
-}
-.logo__web {
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: $link-color;
-}
 
-.logo__studio {
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
+  &__web {
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $link-color;
+  }
+
+  &__studio {
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
 }
 
 /* menu */
 .menu {
   display: flex;
+
+  &__item {
+    position: relative;
+  }
 }
+
 .menu__item {
   &:not(:last-child) {
     margin-right: 50px;
